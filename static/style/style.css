@@ -44,6 +44,7 @@ a {
 .second {
   background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   color: white;
+<<<<<<< HEAD
   display: grid;
   grid-template-areas: 
     "titulo titulo titulo"
@@ -53,13 +54,26 @@ a {
   justify-content: center;
   justify-items: center;
   align-items:start;
+=======
+  display: flex;
+  flex-direction: column;
+
+>>>>>>> local
 }
 
-.container .second h1 {
-    grid-area: titulo;
+.second h1 {
+    align-self: center;
 }
-.container .second .proyecto {
+
+.second .container-proyectos {
+    align-self:center;
+    height: 60%;
+    width: 80%;
+}
+
+.container .second .container-proyectos .proyecto {
     border: 1px red solid;
+    
 }
 
 
