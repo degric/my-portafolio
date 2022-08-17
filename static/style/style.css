@@ -44,22 +44,24 @@ a {
 .second {
   background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   color: white;
-  display: grid;
-  grid-template-areas: 
-    "titulo titulo titulo"
-  ;
-  grid-template-rows: repeat(2, 10rem);
-  grid-template-columns: repeat(3, 9rem);
-  justify-content: center;
-  justify-items: center;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.container .second h1 {
-    grid-area: titulo;
+.second h1 {
+    align-self: center;
 }
-.container .second .proyecto {
+
+.second .container-proyectos {
+    align-self:center;
+    height: 60%;
+    width: 80%;
+}
+
+.container .second .container-proyectos .proyecto {
     border: 1px red solid;
+    
 }
 
 
