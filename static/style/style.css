@@ -1,25 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
 
+/*##########################Estilos Generales##################*/
 body {
   margin: 0;
   padding: none;
 }
 
-.content {
-  display: flex;
-  justify-content: flex-start;
-}
-
-/*-------------------------Navigation-------------------------*/
 .navigation {
-  height: 100vh;
-  width: 2.5rem;
   background: #070813;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
 }
 li {
   list-style: none;
@@ -29,21 +17,16 @@ a {
 }
 
 .navigation li a img {
-  height: 1.5rem;
-  width: auto;
   border: 1px rgba(255, 255, 255, 0.2) solid;
   border-radius: 5px;
   background-color: rgba(230, 230, 230, 0.6);
 }
-.icon {
-  height: 2.5rem !important;
-  width: auto !important;
-  margin-top: 1px;
+
+.container {
+  font-family: "Playfair Display", serif;
 }
 
-/*-------------------------Container-------------------------*/
-.container {
- 
+.first {
   background-image: radial-gradient(
     circle at 62.03% 83.04%,
     #c43f7e 0,
@@ -56,38 +39,109 @@ a {
     #15002b 87.5%,
     #010020 100%
   );
-  height: 100vh;
-  width: 100%;
-  margin: 0 0 0 2.5rem ;
-  padding: 0 0 0 0;
-  display: grid;
-  grid-template-columns:100%;
-  grid-template-rows:repeat(2, 100vh);
-font-family: "Playfair Display", serif;
-}
-
-.first {
-    padding-left: 10vmin;
-  margin: 0;
   color: white;
-  font-size: 15px;
 }
 .second {
- background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
-  margin: 0;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   color: white;
-  font-size: 15px;
-}
- 
-@media (max-width: 800px){
-   .content {
-       display: flex;
-       flex-direction: column;
-   } 
-   .navigation {
-       display: flex;
-       flex-direction: row;
-
-   }
 }
 
+/*************************************************/
+/*----------estilos de escritorio----------------*/
+@media (min-width: 800px) {
+  .content {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /*-------------------------Navigation-------------------------*/
+  .navigation {
+    height: 100vh;
+    width: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .navigation li a img {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  /*-------------------------Container-------------------------*/
+  .container {
+    height: 100vh;
+    width: 100%;
+    margin: 0 0 0 2.5rem;
+    padding: 0 0 0 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 100vh);
+  }
+
+  .first {
+    padding-left: 10vmin;
+    margin: 0;
+    font-size: 15px;
+  }
+  .contenido {
+    margin: 4rem 30rem 0 3rem;
+  }
+  .second {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+/*************************************************/
+/*----------estilos de moviles-------------------*/
+@media (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation {
+    height: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+  }
+  .navigation li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .navigation li a img {
+    height: 1.5rem;
+    width: auto;
+    display: flex;
+  }
+  .top {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 100vh);
+    margin: 2rem 0 0 0;
+  }
+  .contenido {
+    margin: 2rem 4rem 0 4rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container h2 {
+    font-size: 1rem;
+  }
+}
