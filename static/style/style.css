@@ -44,7 +44,6 @@ a {
 .second {
   background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   color: white;
-<<<<<<< HEAD
   display: grid;
   grid-template-areas: 
     "titulo titulo titulo"
@@ -54,11 +53,9 @@ a {
   justify-content: center;
   justify-items: center;
   align-items:start;
-=======
   display: flex;
   flex-direction: column;
 
->>>>>>> local
 }
 
 .second h1 {
