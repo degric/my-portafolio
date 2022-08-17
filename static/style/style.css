@@ -73,7 +73,7 @@ font-family: "Playfair Display", serif;
   font-size: 15px;
 }
 .second {
-    background-color: red;
+ background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   margin: 0;
   color: white;
   
