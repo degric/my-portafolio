@@ -45,34 +45,35 @@ a {
   background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
   color: white;
   display: grid;
-  grid-template-areas: 
-    "titulo titulo titulo"
-  ;
+  grid-template-areas: "titulo titulo titulo";
   grid-template-rows: repeat(3, 10rem);
   grid-template-columns: repeat(3, 9rem);
   justify-content: center;
   justify-items: center;
-  align-items:start;
+  align-items: start;
   display: flex;
   flex-direction: column;
-
 }
 
 .second h1 {
-    align-self: center;
+  align-self: center;
 }
 
 .second .container-proyectos {
-    align-self:center;
-    height: 60%;
-    width: 80%;
+  align-self: center;
+  height: 60%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 48%);
+  grid-column-gap: 2.5%;
+  grid-row-gap: 4%;
+  justify-content: center;
 }
 
 .container .second .container-proyectos .proyecto {
-    border: 1px red solid;
-    
+  border: 1px red solid;
 }
-
 
 /*************************************************/
 /*----------estilos de escritorio----------------*/
